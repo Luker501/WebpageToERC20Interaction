@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="container">
+      <fieldset>
+	<form action="/balance" method="post">
+	  <input name="address" type="string" class="ghost-input" placeholder="Enter an address" required>
+          <input type="submit" class="ghost-button" value="Get balance of address">
+        </form>
+      </fieldset>
+      <fieldset>
+        <form action="/" method="post">
+	  <input name="address" type="string" class="ghost-input" placeholder="Enter an address" required>
+	  <input name="value" type="number" class="ghost-input" placeholder="Enter the value to send" required>
+          <input type="submit" class="ghost-button" value="Send tokens">
+        </form>
+      </fieldset>
+      <fieldset>
+        <% if(balanceIs !== null){ %>
+          <p><%= balanceIs %></p>
+        <% } %>
+
+        <% if(info !== null){ %>
+          <p><%= info %></p>
+        <% } %>
+      </fieldset>
+    </div>
+  </body>
+</html>

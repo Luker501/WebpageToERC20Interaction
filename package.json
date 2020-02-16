@@ -1,0 +1,19 @@
+{
+  "name": "withropstentestnet",
+  "version": "1.0.0",
+  "description": "Lists the packages this activity depends on",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Luke Riley",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "eth-lightwallet": "^4.0.0",
+    "ethereumjs-tx": "^2.1.2",
+    "express": "^4.17.1",
+    "web3": "^1.2.6"
+  }
+}
